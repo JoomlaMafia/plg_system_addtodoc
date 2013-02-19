@@ -1,10 +1,11 @@
-# joomla system plugin - Add to doc
+# plg_system_addtodoc
 
 Simple plugin to add custom code and elements to the Joomla document
 
 # Compatibility
 
-Tested on Joomla 2.5 and 3.0
+* Tested on Joomla 2.5
+* Tested on Joomla 3.0
 
 # Description
 
