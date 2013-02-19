@@ -33,6 +33,36 @@ license       GNU General Public License version 2 or later; see http://www.gnu.
 					<option value="both">PLG_SYSTEM_ADDTODOC_FIELD_OPTION_BOTH_SIDES</option>
 				</field>
 				
+				<field name="enable_script_declaration" type="radio"
+					default="0"
+					label="PLG_SYSTEM_ADDTODOC_FIELD_ENABLE_SCRIPT_DECLARATION_LABEL"
+					description="PLG_SYSTEM_ADDTODOC_FIELD_ENABLE_SCRIPT_DECLARATION_DESC"
+				>
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				
+				<field name="script_declaration" type="textarea"
+					rows="10"
+					label="PLG_SYSTEM_ADDTODOC_FIELD_SCRIPT_DECLARATION_LABEL"
+					description="PLG_SYSTEM_ADDTODOC_FIELD_SCRIPT_DECLARATION_DESC"
+				/>
+				
+				<field name="enable_style_declaration" type="radio"
+					default="0"
+					label="PLG_SYSTEM_ADDTODOC_FIELD_ENABLE_STYLE_DECLARATION_LABEL"
+					description="PLG_SYSTEM_ADDTODOC_FIELD_ENABLE_STYLE_DECLARATION_DESC"
+				>
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				
+				<field name="style_declaration" type="textarea"
+					rows="10"
+					label="PLG_SYSTEM_ADDTODOC_FIELD_STYLE_DECLARATION_LABEL"
+					description="PLG_SYSTEM_ADDTODOC_FIELD_STYLE_DECLARATION_DESC"
+				/>
+				
 				<field name="enable_prepend_to_head" type="radio"
 					default="0"
 					label="PLG_SYSTEM_ADDTODOC_FIELD_ENABLE_PREPEND_TO_HEAD_LABEL"
@@ -95,36 +125,6 @@ license       GNU General Public License version 2 or later; see http://www.gnu.
 					filter="raw"
 					label="PLG_SYSTEM_ADDTODOC_FIELD_APPEND_TO_BODY_LABEL"
 					description="PLG_SYSTEM_ADDTODOC_FIELD_APPEND_TO_BODY_DESC"
-				/>
-				
-				<field name="enable_script_declaration" type="radio"
-					default="0"
-					label="PLG_SYSTEM_ADDTODOC_FIELD_ENABLE_SCRIPT_DECLARATION_LABEL"
-					description="PLG_SYSTEM_ADDTODOC_FIELD_ENABLE_SCRIPT_DECLARATION_DESC"
-				>
-					<option value="0">JNo</option>
-					<option value="1">JYes</option>
-				</field>
-				
-				<field name="script_declaration" type="textarea"
-					rows="10"
-					label="PLG_SYSTEM_ADDTODOC_FIELD_SCRIPT_DECLARATION_LABEL"
-					description="PLG_SYSTEM_ADDTODOC_FIELD_SCRIPT_DECLARATION_DESC"
-				/>
-				
-				<field name="enable_style_declaration" type="radio"
-					default="0"
-					label="PLG_SYSTEM_ADDTODOC_FIELD_ENABLE_STYLE_DECLARATION_LABEL"
-					description="PLG_SYSTEM_ADDTODOC_FIELD_ENABLE_STYLE_DECLARATION_DESC"
-				>
-					<option value="0">JNo</option>
-					<option value="1">JYes</option>
-				</field>
-				
-				<field name="style_declaration" type="textarea"
-					rows="10"
-					label="PLG_SYSTEM_ADDTODOC_FIELD_STYLE_DECLARATION_LABEL"
-					description="PLG_SYSTEM_ADDTODOC_FIELD_STYLE_DECLARATION_DESC"
 				/>
 				
 			</fieldset>
