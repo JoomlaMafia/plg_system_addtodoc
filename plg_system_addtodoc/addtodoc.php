@@ -36,6 +36,20 @@ class plgSystemAddToDoc extends JPlugin {
 			if ($this->params->get('enable_style_declaration') && trim($this->params->get('style_declaration'))) {
 				$doc->addStyleDeclaration($this->params->get('style_declaration'));
 			}
+			// add script files
+			if ($this->params->get('enable_script_files') && trim($this->params->get('script_files'))) {
+				$files = explode("\n", trim($this->params->get('script_files')));
+				foreach ($files as $file) {
+					if (trim($file)) $doc->addScript(trim($file));
+				}
+			}
+			// add style files
+			if ($this->params->get('enable_style_files') && trim($this->params->get('style_files'))) {
+				$files = explode("\n", trim($this->params->get('style_files')));
+				foreach ($files as $file) {
+					if (trim($file)) $doc->addStyleSheet(trim($file));
+				}
+			}
 		}
 	}
 

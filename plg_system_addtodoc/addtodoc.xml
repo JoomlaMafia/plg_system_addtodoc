@@ -22,6 +22,7 @@ license       GNU General Public License version 2 or later; see http://www.gnu.
 	
 	<config>
 		<fields name="params">
+		
 			<fieldset name="basic">
 				<field name="execution_side" type="list"
 					default="0"
@@ -32,7 +33,12 @@ license       GNU General Public License version 2 or later; see http://www.gnu.
 					<option value="admin">PLG_SYSTEM_ADDTODOC_FIELD_OPTION_BACKEND</option>
 					<option value="both">PLG_SYSTEM_ADDTODOC_FIELD_OPTION_BOTH_SIDES</option>
 				</field>
-				
+			</fieldset>
+
+			<fieldset name="declarations"
+				label="PLG_SYSTEM_ADDTODOC_FIELDSET_DECLARATIONS_LABEL"
+				description="PLG_SYSTEM_ADDTODOC_FIELDSET_DECLARATIONS_DESC">
+					
 				<field name="enable_script_declaration" type="radio"
 					default="0"
 					label="PLG_SYSTEM_ADDTODOC_FIELD_ENABLE_SCRIPT_DECLARATION_LABEL"
@@ -62,6 +68,46 @@ license       GNU General Public License version 2 or later; see http://www.gnu.
 					label="PLG_SYSTEM_ADDTODOC_FIELD_STYLE_DECLARATION_LABEL"
 					description="PLG_SYSTEM_ADDTODOC_FIELD_STYLE_DECLARATION_DESC"
 				/>
+			</fieldset>
+			
+			<fieldset name="files"
+				label="PLG_SYSTEM_ADDTODOC_FIELDSET_FILES_LABEL"
+				description="PLG_SYSTEM_ADDTODOC_FIELDSET_FILES_DESC">
+			
+				<field name="enable_script_files" type="radio"
+					default="0"
+					label="PLG_SYSTEM_ADDTODOC_FIELD_ENABLE_SCRIPT_FILES_LABEL"
+					description="PLG_SYSTEM_ADDTODOC_FIELD_ENABLE_SCRIPT_FILES_DESC"
+				>
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				
+				<field name="script_files" type="textarea"
+					rows="10"
+					label="PLG_SYSTEM_ADDTODOC_FIELD_SCRIPT_FILES_LABEL"
+					description="PLG_SYSTEM_ADDTODOC_FIELD_SCRIPT_FILES_DESC"
+				/>
+				
+				<field name="enable_style_files" type="radio"
+					default="0"
+					label="PLG_SYSTEM_ADDTODOC_FIELD_ENABLE_STYLE_FILES_LABEL"
+					description="PLG_SYSTEM_ADDTODOC_FIELD_ENABLE_STYLE_FILES_DESC"
+				>
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				
+				<field name="style_files" type="textarea"
+					rows="10"
+					label="PLG_SYSTEM_ADDTODOC_FIELD_STYLE_FILES_LABEL"
+					description="PLG_SYSTEM_ADDTODOC_FIELD_STYLE_FILES_DESC"
+				/>
+			</fieldset>
+			
+			<fieldset name="document"
+				label="PLG_SYSTEM_ADDTODOC_FIELDSET_DOCUMENT_LABEL"
+				description="PLG_SYSTEM_ADDTODOC_FIELDSET_DOCUMENT_DESC">
 				
 				<field name="enable_prepend_to_head" type="radio"
 					default="0"
@@ -126,8 +172,8 @@ license       GNU General Public License version 2 or later; see http://www.gnu.
 					label="PLG_SYSTEM_ADDTODOC_FIELD_APPEND_TO_BODY_LABEL"
 					description="PLG_SYSTEM_ADDTODOC_FIELD_APPEND_TO_BODY_DESC"
 				/>
-				
 			</fieldset>
+			
 		</fields>
 	</config>
 
